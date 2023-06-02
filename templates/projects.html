@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    li a {
+    
+    color: rgb(17, 17, 17);
+    font-size: larger;
+    text-align: center;
+    text-decoration: none;
+  }
+  div.gallery {
+  margin: 15px;
+  border: 1px solid #ccc;
+  float: left;
+}
+
+div.gallery:hover {
+  border: 1px solid #1a1919;
+}
+</style>
+<body>
+    <nav class="navbar navbar-expand-sm">
+        <div>
+          <img class="img-fluid" src="https://global-uploads.webflow.com/5e157548d6f7910beea4e2d6/63e4f369e6e08090ee0ad07d_Screenshot%202023-02-09%20at%206.46.57%20PM.png" style="width: 40%; height: 40%; border-radius: 50%;" class="rounded">
+        </div>
+      
+        <ul class="navbar-nav ml-auto" style="margin-right: 10%; margin-bottom:20px;">
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'homes'%}"style="margin-right: 50px;">
+                 HOME
+                </a>
+            </li>
+            <li class="nav-item" style="margin-right: 50px;">
+              <a class="nav-link" href="{% url 'company' %}">
+                OUR COMPANY
+              </a>
+          </li>
+            <li class="nav-item" style="margin-right: 50px;">
+                <a class="nav-link" href="{% url 'service' %}">
+                  SERVICES
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'pro' %}"  style="margin-right: 50px;">
+                  PROJECTS
+                </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'con' %}" style="margin-right: 50px;">
+                CONTACT US
+              </a>
+          </li>
+        </ul>
+    </nav>
+    <div>
+        <h1 style="text-align: center; margin-top: 100px;">Working Projects</h1>
+        <div class="gallery" style="margin-left: 200px; margin-top: 100px;">
+            <img src="https://proest.com/wp-content/uploads/2022/10/Construction-site-plans.jpg" alt="Cinque Terre" width="300" height="300">
+            <p><a href="" data-toggle="modal" data-target="#exampleModal">Click here to more details</a></p>
+        </div>
+        <div class="gallery"style=" margin-top: 100px;" >
+            <img src="https://images.moneycontrol.com/static-mcnews/2022/08/Construction-PTI-1.jpg?impolicy=website&width=1600&height=900" alt="Cinque Terre" width="300" height="300">
+            <p><a href="" data-toggle="modal" data-target="#exampleModal1">Click here to more details</a></p>
+        </div>
+        <div class="gallery"style="margin-top: 100px;">
+            <img src="https://media.istockphoto.com/photos/experienced-engineer-explaining-the-problems-in-construction-works-picture-id1267010934?b=1&k=20&m=1267010934&s=612x612&w=0&h=KTr-N8C7hyPFan0vyTNdFhSg2Bfyqe7PuMZtrppCuQ4=" alt="Cinque Terre" width="300" height="300">
+            <p><a href="" data-toggle="modal" data-target="#exampleModal2">Click here to more details</a></p>
+        </div>
+    </div>
+        </div>
+        
+</div>
+
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Project Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <form>
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <td>Description</td>
+              <td>Constructing the New Embassy Complex (NEC), Baghdad, Iraq</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Client</td>
+              <td>U.S. Department of State</td>
+            </tr>
+            <tr>
+              <td>Services</td>
+              <td>Embassies,
+                Infrastructure,
+                Electrical & Mechanical Services</td>
+            </tr>
+            <tr>
+              <td>Sector</td>
+              <td>Public</td>
+            </tr>
+            <tr>
+              <td>Government of</td>
+              <td>United State of America</td>
+            </tr>
+            <tr>
+              <td>Location</td>
+              <td>Iraq</td>
+            </tr>
+            <tr>
+              <td>Completion year</td>
+              <td>2007</td>
+            </tr>
+            <tr>
+              <td>Value (USD)</td>
+              <td>498.5 MM USD</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Project Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <form>
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <td>Description</td>
+              <td>Construction and Maintenance of (3) nos. R.C. Ground Reservoirs for Fresh Water (90 M.I.G. Capacity & 2 nos. 55 M.I.G. Capacity Each) And Annexed Works At Mutlaa High (Stage-1)</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Client</td>
+              <td>Ministry of Electricity and Water</td>
+            </tr>
+            <tr>
+              <td>Services</td>
+              <td>Construction & Engineering,
+                Infrastructure,
+                Deep Foundation & Marine Works</td>
+            </tr>
+            <tr>
+              <td>Sector</td>
+              <td>Public</td>
+            </tr>
+            <tr>
+              <td>Government of</td>
+              <td>State of Kuwait</td>
+            </tr>
+            <tr>
+              <td>Location</td>
+              <td>Kuwait</td>
+            </tr>
+            <tr>
+              <td>Completion year</td>
+              <td>2016</td>
+            </tr>
+            <tr>
+              <td>Value (USD)</td>
+              <td>58 MM USD</td>
+            </tr>
+            <tr>
+              <td>Value (KWD)</td>
+              <td>17 MM KWD</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Project Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <form>
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <td>Description</td>
+              <td>Refurbishment & Maintenance of Internal, External and Civil works for the passengers terminal building at Kuwait International Airport</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Client</td>
+              <td>Directorate General of Civil Aviation</td>
+            </tr>
+            <tr>
+              <td>Services</td>
+              <td>Airports (Runways, Terminals, & Helipads)</td>
+            </tr>
+            <tr>
+              <td>Sector</td>
+              <td>Public</td>
+            </tr>
+            <tr>
+              <td>Government of</td>
+              <td>State of Kuwait</td>
+            </tr>
+            <tr>
+              <td>Location</td>
+              <td>Kuwait</td>
+            </tr>
+            <tr>
+              <td>Completion year</td>
+              <td>2007</td>
+            </tr>
+            <tr>
+              <td>Value (USD)</td>
+              <td>8 MM USD</td>
+            </tr>
+            <tr>
+              <td>Value (KWD)</td>
+              <td>2.5 MM KWD</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

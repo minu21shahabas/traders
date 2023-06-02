@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>traders</title>
+</head>
+<style>
+    li a {
+    
+    color: rgb(17, 17, 17);
+    font-size: larger;
+    text-align: center;
+    text-decoration: none;
+  }
+  div.gallery {
+  margin: 15px;
+  border: 1px solid #ccc;
+  float: left;
+}
+
+div.gallery:hover {
+  border: 1px solid #1a1919;
+}
+
+
+  </style>
+<body>
+    
+      
+            <nav class="navbar navbar-expand-sm">
+              <div>
+                <img class="img-fluid" src="https://global-uploads.webflow.com/5e157548d6f7910beea4e2d6/63e4f369e6e08090ee0ad07d_Screenshot%202023-02-09%20at%206.46.57%20PM.png" style="width: 40%; height: 40%; border-radius: 50%;" class="rounded">
+              </div>
+            
+              <ul class="navbar-nav ml-auto" style="margin-right: 10%; margin-bottom:20px;">
+                  <li class="nav-item">
+                      <a class="nav-link" href=""style="margin-right: 50px;">
+                       HOME
+                      </a>
+                  </li>
+                  <li class="nav-item" style="margin-right: 50px;">
+                    <a class="nav-link" href="{% url 'company' %}">
+                      OUR COMPANY
+                    </a>
+                </li>
+                  <li class="nav-item" style="margin-right: 50px;">
+                      <a class="nav-link" href="{% url 'service' %}">
+                        SERVICES
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="{% url 'pro' %}" style="margin-right: 50px;">
+                        PROJECTS
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'con' %}" style="margin-right: 50px;">
+                      CONTACT US
+                    </a>
+                </li>
+              </ul>
+          </nav>
+          <div>
+            <img src="https://www.letsbuild.com/wp-content/uploads/2019/05/Depositphotos_89120612_s-2019.jpg" style=" width: 100%;">
+            <div>
+        <div>
+            <ul><h1 style="margin-top: 100px; text-align: center;">Trading & Contracting Company</h1></ul>
+            <p style="margin-top: 50px; text-align: justify; margin-left: 20px; margin-right: 20px;">It is one of the largest providers of construction services to the public sector in the region. Throughout the path, we have achieved several considerable construction and remodeling projects. An amalgam of leading corps and trades persons who have a mainstream of over 40 years of experience and presence in the sector. Our professionalism is an innate seed grown into an acquired experience. Our resources, knowledge, engineering & manpower staff reaching 13,000 at times, along with our 5,000 strong equipment and machinery allows us to undertake complex projects in the harshest conditions, and time sensitive situations.
+
+                Our unmatched ability to create partners and joint ventures allowing us a strategic and versatile platform, to grow, improve our service spectrum and scope of work.Out highly structured approach, our regional and sectorial diversification, and distinct specialization in operating in in harsh environments and remote areas, positions the company as one of the leading construction companies.</p>
+                <p style="margin-top: 50px; text-align: justify; margin-left: 20px; margin-right: 20px;">In its most widely used context, construction covers the processes involved in delivering buildings, infrastructure, industrial facilities, and associated activities through to the end of their life. It typically starts with planning, financing, and design, and continues until the asset is built and ready for use; construction also covers repairs and maintenance work, any works to expand, extend and improve the asset, and its eventual demolition, dismantling or decommissioning.
+
+                    The construction industry contributes significantly to many countries' gross domestic products (GDP). Global expenditure on construction activities was about $4 trillion in 2012. In 2022, expenditure on the construction industry exceeded $11 trillion a year, equivalent to about 13 percent of global GDP. This spending was forecast to rise to around $14.8 trillion in 2030.[3]
+                    
+                    Although the construction industry promotes economic development and brings many non-monetary benefits to many countries, it is one of the most hazardous industries. For example, about 20% (1,061) of US industry fatalities in 2019 happened in construction.</p>
+        </div>
+        <div>
+            <h1 style="text-align: center; margin-top: 100px;">Featured Projects</h1>
+            <div class="gallery" style="margin-left: 200px; margin-top: 100px;">
+                <img src="https://proest.com/wp-content/uploads/2022/10/Construction-site-plans.jpg" alt="Cinque Terre" width="300" height="300">
+                <p><a href="">Click here to more details</a></p>
+            </div>
+            <div class="gallery"style=" margin-top: 100px;" >
+                <img src="https://images.moneycontrol.com/static-mcnews/2022/08/Construction-PTI-1.jpg?impolicy=website&width=1600&height=900" alt="Cinque Terre" width="300" height="300">
+                <p><a href="">Click here to more details</a></p>
+            </div>
+            <div class="gallery"style="margin-top: 100px;">
+                <img src="https://media.istockphoto.com/photos/experienced-engineer-explaining-the-problems-in-construction-works-picture-id1267010934?b=1&k=20&m=1267010934&s=612x612&w=0&h=KTr-N8C7hyPFan0vyTNdFhSg2Bfyqe7PuMZtrppCuQ4=" alt="Cinque Terre" width="300" height="300">
+                <p><a href="">Click here to more details</a></p>
+            </div>
+        </div>
+            </div>
+            
+    </div>
+    
+
+
+    
+</body>
+</html>
